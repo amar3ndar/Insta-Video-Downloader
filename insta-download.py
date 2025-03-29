@@ -5,7 +5,7 @@ import requests
 import time
 
 # Initialize bot with your token
-bot = telebot.TeleBot("8198527068:AAGCo2FMN6oCSxAmcRLqvnl5dtaiuaodMm4")
+bot = telebot.TeleBot("YOUR_BOT_TOKEN")
 
 # Initialize instaloader
 L = instaloader.Instaloader()
