@@ -1,3 +1,4 @@
+import os
 import telebot
 import instaloader
 from io import BytesIO
@@ -5,7 +6,8 @@ import requests
 import time
 
 # Initialize bot with your token
-bot = telebot.TeleBot("YOUR_BOT_TOKEN")
+BOT_TOKEN = os.getenv("YOUR_BOT_TOKEN")
+bot = telebot.TeleBot(BOT_TOKEN)
 
 # Initialize instaloader
 L = instaloader.Instaloader()
